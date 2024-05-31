@@ -19,8 +19,8 @@
 <button (click)="saveEntry()" [disabled]="!latestEntry">Save Entry</button>
 
 <h2>Latest Entry</h2>
-<div *ngIf="latestEntry">
-  Entry ID: {{ latestEntry.entryId }} | Principal: {{ latestEntry.principal }} | Total Interest: {{ latestEntry.totalInterest }}
+<div *ngIf="latestEntry" id="latest-entry">
+  Principal: {{ latestEntry.principal }} | Total Interest: {{ latestEntry.totalInterest }}
 </div>
 
 <h2>All Entries</h2>
